@@ -9,13 +9,14 @@
     "watch": "babel --watch lib -d build",
     "prepublish": "npm run build",
     "prepare": "npm run build",
-    "prepare-minor":"npm run test; npm version minor; git push; git push --tags; npm publish",
-    "prepare-patch":"npm version patch; git push; git push --tags; npm publish",
-    "preversion": "npm run -s documentation"
+    "prepare-minor": "npm version minor; git push; git push --tags; npm publish",
+    "prepare-patch": "npm version patch; git push; git push --tags; npm publish",
+    "preversion": "npm run -s documentation",
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fusionx1/simple-headless-chrome.git"
+    "url": "git+https://github.com/fusionx1/simple-headless-chrome/simple-headless-chrome.git"
   },
   "keywords": [
     "headless",
